@@ -1,0 +1,136 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-top: 4rem;
+}
+ 
+button {
+  width: 150px;
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.card {
+  padding: 5% 10%;
+  background-color: #656565;
+}
+
+#hero-content {
+  margin: auto;
+  padding: 2rem;
+  line-height: 1.5;
+  background-color: #838334;
+}
+
+#hero-image {
+  grid-area: "b";
+  width: 640px;
+  height: 480px;
+  background: red;
+}
+
+#hero-subtitle {
+  width: 90vw;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+h1 {
+  font-size: 3.8rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 1rem auto;
+}
+
+.products {
+  background: green;
+
+  height: 100vh;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+.carousel-inner {
+  background: pink;
+  padding: 4rem;
+  width: 70vw;
+  margin: auto;
+}
+
+/* #products-carousel {
+  overflow: hidden;
+} */
+
+/* .image {
+  background: lightgreen;
+  border: 1px solid black;
+} */
+
+.simulated-slide {
+  width: 320px;
+  height: 240px;
+  padding: 1rem;
+  text-align: center;
+  background: lightskyblue;
+  margin: auto;
+}
+
+.sativa {
+  height: 100vh;
+  background: chocolate;
+}
+
+#sativa-slides {
+  display: flex;
+  padding: 1rem;
+  width: 90%;
+  height: 40vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px green;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+  box-shadow: inset 0 0 5px pink;
+  border-radius: 10px;
+}
+
+.sativa-slide {
+  padding: 0.5rem;
+  background: green;
+  width: 320px;
+  height: 240px;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+.indica {
+  height: 100vh;
+  background: aqua;
+}
