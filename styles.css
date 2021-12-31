@@ -10,7 +10,7 @@
 ::before,
 ::after {
   box-sizing: border-box;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 
 html,
@@ -25,7 +25,22 @@ section {
   margin: auto;
 }
 
+ul {
+  text-align: left;
+}
+
+li {
+  margin: 0.5rem auto;
+  font-weight: bolder;
+}
+
 /* ------ Navigation Bar ------ */
+
+header {
+  margin-bottom: 60px;
+  position: fixed;
+  z-index: 100;
+}
 
 nav {
   width: 100vw;
@@ -35,7 +50,7 @@ nav {
   height: 60px;
   padding: 1rem;
   background-color: var(--dark-primary);
-  position: sticky;
+
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -61,8 +76,8 @@ nav {
   font-family: var(--font-heading);
   width: 80%;
   margin: auto;
-  padding-top: 2rem;
   font-size: 2.5rem;
+  padding-bottom: 2rem;
   text-align: center;
   color: var(--light-secondary);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -75,13 +90,17 @@ nav {
   color: var(--dark-secondary);
 }
 
+.hero-text {
+  margin-bottom: 2rem;
+}
+
 .hero-caption {
   display: flex;
   flex-direction: column;
   color: var(--light-secondary);
   margin-left: 2rem;
   font-size: 0.7rem;
-  position: relative;
+  position: sticky;
   top: 2rem;
 }
 
@@ -132,7 +151,7 @@ nav {
 
 .section {
   padding: 4rem 2rem;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
 }
 
 /* ------ GG4 SECTION ------ */
@@ -157,6 +176,7 @@ nav {
   position: sticky;
   top: 6rem;
   z-index: 2;
+  margin-bottom: 4rem;
 }
 
 .award-img {
@@ -251,14 +271,12 @@ nav {
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
-#established span {
-  font-weight: bolder;
+#established p {
+  padding: 1rem;
 }
 
-li {
-  margin: 0.5rem auto;
+#established span {
   font-weight: bolder;
-  width: 75%;
 }
 
 /* ------ PREROLLS SECTION ------ */
