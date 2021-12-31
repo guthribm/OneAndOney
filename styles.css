@@ -36,7 +36,7 @@ section {
 ul {
   text-align: left;
   margin-top: 0;
-  padding: 0;
+  align-self: flex-start;
 }
 
 li {
@@ -349,9 +349,9 @@ nav {
   color: var(--dark-primary);
 }
 
-.concentrate-text ul {
+/* .concentrate-text ul {
   padding: 0;
-}
+} */
 
 /* ------ THAI SECTION ------ */
 
