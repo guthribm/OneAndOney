@@ -199,6 +199,7 @@ nav {
 .award-img {
   z-index: 10;
   position: relative;
+  top: 2px;
 }
 
 .gg4-text {
@@ -319,7 +320,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   border-radius: 12px;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
   padding: 1rem;
@@ -405,6 +405,14 @@ nav {
   font-weight: bolder;
 }
 
+a {
+  text-decoration: none;
+}
+
+#google-map {
+  width: 100%;
+}
+
 #direction-btn {
   margin: 2rem auto;
   font-size: 1.25rem;
@@ -442,7 +450,9 @@ nav {
 .highlighted-day {
   font-weight: bolder;
   color: var(--dark-primary);
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+  padding: 0.5rem 1rem;
+  background: var(--dark-secondary);
 }
 
 tbody {
@@ -471,6 +481,26 @@ h5:last-of-type {
   background: var(--dark-primary);
   color: var(--light-secondary);
   font-weight: normal;
+}
+
+#texoma-link {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+#texoma-link:hover {
+  font-weight: normal;
+  color: rgb(18, 24, 114);
+  text-decoration: underline;
+}
+
+#texoma-link:visited {
+  color: rgb(168, 69, 3);
+}
+
+#texoma-footer-logo {
+  width: 100px;
+  margin: 1rem auto 0;
 }
 
 .footer-title {
