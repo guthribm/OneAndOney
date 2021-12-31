@@ -13,6 +13,10 @@
   border: 1px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -90,10 +94,6 @@ nav {
   color: var(--dark-secondary);
 }
 
-.hero-text {
-  margin-bottom: 2rem;
-}
-
 .hero-caption {
   display: flex;
   flex-direction: column;
@@ -116,6 +116,7 @@ nav {
 #dragon-image {
   position: relative;
   top: 0.5rem;
+  margin-top: 2rem;
 }
 
 /* ------ INTRO SECTION ------ */
@@ -176,7 +177,6 @@ nav {
   position: sticky;
   top: 6rem;
   z-index: 2;
-  margin-bottom: 4rem;
 }
 
 .award-img {
