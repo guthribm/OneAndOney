@@ -24,6 +24,10 @@ body {
   font-family: var(--font-primary);
 }
 
+img {
+  width: 100%;
+}
+
 section {
   max-width: 600px;
   margin: auto;
@@ -31,6 +35,8 @@ section {
 
 ul {
   text-align: left;
+  margin-top: 0;
+  padding: 0;
 }
 
 li {
@@ -44,6 +50,10 @@ header {
   margin-bottom: 60px;
   position: fixed;
   z-index: 100;
+}
+
+#oney-logo {
+  height: 2.75rem;
 }
 
 nav {
@@ -93,7 +103,7 @@ nav {
   text-align: center;
   color: var(--light-secondary);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  line-height: 1.2;
+  line-height: 1;
   display: flex;
   flex-direction: column;
 }
@@ -132,7 +142,9 @@ nav {
 #intro {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 4rem 3rem;
+  align-items: center;
   width: 100%;
   text-align: center;
   background: linear-gradient(var(--light-secondary), var(--dark-secondary));
@@ -151,8 +163,7 @@ nav {
 }
 
 .texoma-logo {
-  margin-top: 2rem;
-  padding: 1rem;
+  padding: 0 1rem;
   background: var(--dark-primary);
   border-radius: 12px;
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
@@ -165,6 +176,8 @@ nav {
 }
 
 /* ------ GG4 SECTION ------ */
+#thai-section,
+#dirty-section,
 #gelato-section,
 #gg4-section {
   background: linear-gradient(var(--dark-primary), var(--light-primary));
@@ -271,6 +284,7 @@ nav {
 }
 
 #established {
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   background: var(--light-secondary);
@@ -278,10 +292,6 @@ nav {
   text-align: center;
   border-radius: 12px;
   box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
-}
-
-#established p {
-  padding: 1rem;
 }
 
 #established span {
@@ -295,11 +305,15 @@ nav {
   color: var(--light-secondary);
 }
 
+#edibles-section h2,
+#concentrates h2,
 #prerolls h2 {
   margin-top: 0;
   text-align: center;
 }
 
+.edibles-text,
+.concentrate-text,
 .preroll-text {
   background: var(--light-secondary);
   color: var(--dark-primary);
@@ -319,4 +333,52 @@ nav {
 
 .preroll-text span {
   font-weight: bolder;
+}
+
+/* ------ DIRTY SECTION ------ */
+
+.first-place {
+  color: var(--dark-secondary);
+  text-shadow: 0 0 6px rgba(255, 255, 25, 0.9);
+}
+
+#dirty-section .strain {
+  padding-bottom: 2rem;
+}
+
+/* ------ CONCENTRATES SECTION ------ */
+
+#concentrates {
+  background: var(--light-primary);
+  color: var(--light-secondary);
+}
+
+.concentrate-text {
+  background: var(--light-secondary);
+  color: var(--dark-primary);
+}
+
+.concentrate-text ul {
+  padding: 0;
+}
+
+/* ------ THAI SECTION ------ */
+
+#thai-section {
+  background: linear-gradient(var(--dark-secondary), var(--light-secondary));
+}
+
+.thai-award {
+  color: var(--light-primary);
+}
+
+.thai-strain {
+  color: var(--dark-primary);
+}
+
+/* ------ EDIBLES SECTION ------ */
+
+#edibles-section {
+  background: var(--dark-primary);
+  color: var(--light-secondary);
 }
