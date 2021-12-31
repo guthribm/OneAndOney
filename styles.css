@@ -274,7 +274,7 @@ nav {
 }
 
 .img {
-  box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.35), 0 0 10px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
 }
 
@@ -300,13 +300,16 @@ nav {
   color: var(--light-secondary);
 }
 
+#location h2,
 #edibles-section h2,
 #concentrates h2,
 #prerolls h2 {
   margin-top: 0;
   text-align: center;
+  font-family: var(--font-heading);
 }
 
+.location-text,
 .edibles-text,
 .concentrate-text,
 .preroll-text {
@@ -372,4 +375,89 @@ nav {
 #edibles-section {
   background: var(--dark-primary);
   color: var(--light-secondary);
+}
+
+/* ------ LOCATION SECTION ------ */
+
+#location {
+  background: var(--dark-secondary);
+  color: var(--light-primary);
+}
+
+#address {
+  color: var(--dark-primary);
+}
+
+#location h2 {
+  line-height: 1;
+}
+
+.location-text,
+#hours {
+  color: var(--light-primary);
+}
+
+#store-hrs {
+  font-family: var(--font-heading);
+  color: var(--dark-primary);
+  font-size: 2rem;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+#direction-btn {
+  margin: 2rem auto;
+  font-size: 1.25rem;
+  color: var(--dark-secondary);
+  background: linear-gradient(90deg, var(--dark-primary), var(--light-primary));
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--dark-secondary);
+  border-radius: 12px;
+  font-weight: bolder;
+  transition: 0.5s;
+}
+
+#direction-btn:hover,
+#direction-btn:focus {
+  color: var(--dark-primary);
+  background: linear-gradient(
+    90deg,
+    var(--dark-secondary),
+    var(--light-secondary)
+  );
+  border-color: var(--dark-primary);
+}
+
+#map-img {
+  margin: 0 auto;
+}
+
+.highlighted-day {
+  font-weight: bolder;
+  color: var(--dark-primary);
+  text-shadow: 0 0 8px rgb(81, 146, 89);
+  transform: scale(1.1);
+}
+
+tbody {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* ------ FOOTER SECTION ------ */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--dark-primary);
+}
+
+#year {
+  color: var(--light-secondary);
+  margin-right: 1rem;
+}
+.fa-copyright {
+  color: var(--light-secondary);
+  margin-right: 0.5rem;
 }
