@@ -275,12 +275,14 @@ nav {
       #43a36c
     )
     fixed;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .dark-fancy-text {
   background: linear-gradient(200deg, #008866, #005a0b, #640101, #008866) fixed;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -294,6 +296,7 @@ nav {
       #34f374
     )
     fixed;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
