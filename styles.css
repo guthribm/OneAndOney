@@ -48,13 +48,17 @@ h5:last-of-type {
   background-image: url("images/interior_photo.jpg");
 
   /* Full height */
-  height: 100vh;
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  -webkit-background-attachment: fixed;
+  -webkit-background-position: center;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-size: cover;
 }
 
 section {
@@ -275,9 +279,10 @@ nav {
       #43a36c
     )
     fixed;
-  background-clip: text;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .dark-fancy-text {
