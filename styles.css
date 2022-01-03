@@ -45,7 +45,7 @@ h5:last-of-type {
 
 .parallax {
   /* The image used */
-  background-image: url("./images/interior_photo.jpg");
+  background-image: url("images/interior_photo.jpg");
 
   /* Full height */
   height: 100vh;
