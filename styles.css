@@ -24,6 +24,10 @@ body {
   font-family: var(--font-primary);
 }
 
+p {
+  text-align: center;
+}
+
 img {
   width: 100%;
 }
@@ -69,6 +73,8 @@ ul {
 li {
   margin: 0.5rem auto;
   font-weight: bolder;
+  list-style: none;
+  font-size: 1.75rem;
 }
 
 /* ------ Navigation Bar ------ */
@@ -147,6 +153,7 @@ nav {
   font-size: 0.7rem;
   position: sticky;
   top: 2rem;
+  align-items: flex-start;
 }
 
 .hero-caption p:first-of-type {
@@ -230,11 +237,41 @@ nav {
   top: 2px;
 }
 
-.intro-text {
+.dark-fancy-top-text {
+  background: linear-gradient(
+      200deg,
+      var(--dark-secondary),
+      #035210,
+      #453422,
+      #43a36c
+    )
+    fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark-fancy-text {
   /* background: linear-gradient(200deg, #453422, #915063, #035210, #7ade86) fixed; */
   background: radial-gradient(#453422, #915063, #035210, #7ade86) fixed;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.light-fancy-text {
+  background: linear-gradient(
+      200deg,
+      var(--dark-secondary),
+      #dafc8b,
+      #f8ca4c,
+      #34f374
+    )
+    fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-box {
+  background: var(--dark-primary);
 }
 
 .strain {
@@ -310,28 +347,15 @@ nav {
   margin-bottom: 2rem;
 }
 
-.established-text {
-  background: linear-gradient(
-      200deg,
-      var(--dark-secondary),
-      #035210,
-      #453422,
-      #43a36c
-    )
-    fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 #established {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  background: var(--light-secondary);
+  /* background: var(--light-secondary); */
   color: var(--dark-primary);
   text-align: center;
   border-radius: 12px;
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25); */
 }
 
 #established span {
@@ -341,7 +365,7 @@ nav {
 /* ------ PREROLLS SECTION ------ */
 
 #prerolls {
-  background: var(--dark-primary);
+  background: var(--light-primary);
   color: var(--light-secondary);
 }
 
@@ -358,14 +382,14 @@ nav {
 .edibles-text,
 .concentrate-text,
 .preroll-text {
-  background: var(--light-secondary);
+  /* background: var(--light-primary); */
   color: var(--dark-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25); */
   padding: 1rem;
 }
 
@@ -391,15 +415,6 @@ nav {
   color: var(--light-secondary);
 }
 
-.concentrate-text {
-  background: var(--light-secondary);
-  color: var(--dark-primary);
-}
-
-/* .concentrate-text ul {
-  padding: 0;
-} */
-
 /* ------ THAI SECTION ------ */
 
 #thai-section {
@@ -417,7 +432,7 @@ nav {
 /* ------ EDIBLES SECTION ------ */
 
 #edibles-section {
-  background: var(--dark-primary);
+  background: var(--light-primary);
   color: var(--light-secondary);
 }
 
@@ -460,7 +475,7 @@ a {
 #direction-btn {
   margin: 2rem auto;
   font-size: 1.25rem;
-  color: var(--dark-secondary);
+  color: var(--light-secondary);
   background: linear-gradient(
     45deg,
     var(--light-primary),
@@ -468,7 +483,7 @@ a {
     var(--light-primary)
   );
   padding: 0.5rem 1rem;
-  border: 3px solid var(--dark-secondary);
+  border: 3px solid var(--light-secondary);
   border-radius: 12px;
   font-weight: bolder;
   transition: 0.5s;
@@ -494,8 +509,8 @@ a {
 .highlighted-day {
   font-weight: bolder;
   color: var(--dark-primary);
-  padding: 0.5rem 1rem;
-  background: var(--dark-secondary);
+  background: rgba(255, 255, 25, 0.4);
+  font-size: 1.35rem;
 }
 
 tbody {
