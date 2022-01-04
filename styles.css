@@ -28,6 +28,7 @@ body {
 p {
   text-align: center;
   margin: 1rem;
+  width: 100%;
 }
 
 img {
@@ -96,9 +97,9 @@ li {
 /* ------ Navigation Bar ------ */
 
 header {
-  margin-bottom: 60px;
-  position: fixed;
+  position: sticky;
   z-index: 100;
+  top: 0;
 }
 
 #oney-logo {
@@ -199,6 +200,7 @@ nav {
   flex-direction: column;
   color: var(--light-secondary);
   margin-left: 2rem;
+  margin-top: 2rem;
   font-size: 0.7rem;
   position: sticky;
   top: 2rem;
@@ -212,13 +214,14 @@ nav {
 .hero-caption > p {
   margin: 0;
   padding: 0;
+  text-align: left;
 }
 
-#dragon-image {
+/* #dragon-image {
   position: relative;
   top: 0.5rem;
   margin-top: 5rem;
-}
+} */
 
 /* ------ INTRO SECTION ------ */
 
@@ -264,19 +267,20 @@ nav {
   margin: 0;
   padding: 0.25rem;
   margin-bottom: 0.5rem;
+  line-height: 0.7;
 }
 
 .award-text {
+  padding-top: 2rem;
   position: sticky;
   top: 6rem;
   z-index: 2;
-  padding: 0.5rem;
 }
 
 .award-img {
   z-index: 10;
   position: relative;
-  top: 10px;
+  top: 5px;
 }
 
 .text-box-secondary {
@@ -284,12 +288,11 @@ nav {
 }
 
 .strain {
-  display: flex;
   text-align: center;
   font-size: 7rem;
-  justify-content: center;
+
   margin: 0;
-  margin-top: 1rem;
+  margin-bottom: 3rem;
   padding: 0;
   font-weight: bolder;
   color: var(--dark-secondary);
@@ -495,7 +498,7 @@ a {
 }
 
 tbody {
-  text-align: left;
+  text-align: center;
   font-size: 1.1rem;
 }
 
