@@ -30,9 +30,9 @@ p {
   margin: 1rem;
 }
 
-/* img {
+img {
   width: 100%;
-} */
+}
 
 h5 {
   margin: 0;
@@ -583,3 +583,54 @@ tbody {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 } */
+
+/* ------- test for parallax scrolling ------- */
+
+html {
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+}
+
+.parallax-test {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.parallax-test::after {
+  background-image: url("images/interior_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
+.outer-shell {
+  width: 100%;
+  background-color: white;
+  perspective: 2px;
+  -webkit-perspective: 2px;
+}
+
+/* ------- end test for parallax scrolling ------- */
