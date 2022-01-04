@@ -212,7 +212,7 @@ nav {
 
 .texoma-logo {
   padding: 0 1rem;
-  width: 100vw;
+
   /* border-radius: 12px; */
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
 }
@@ -428,7 +428,7 @@ nav {
 
 .location-text,
 #hours {
-  color: var(--light-primary);
+  color: var(--dark-primary);
 }
 
 #store-hrs {
@@ -483,9 +483,8 @@ a {
 
 .highlighted-day {
   font-weight: bolder;
-  color: var(--dark-primary);
-  background: rgba(255, 255, 25, 0.4);
-  font-size: 1.35rem;
+  color: var(--light-secondary);
+  background: var(--dark-primary);
 }
 
 tbody {
@@ -574,30 +573,16 @@ tbody {
   -webkit-background-size: cover;
 }
 
-.dark-fancy-top-text {
-  background: linear-gradient(
-      200deg,
-      var(--dark-secondary),
-      #035210,
-      #453422,
-      #43a36c
-    )
-    fixed;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.dark-fancy-text {
+/* .dark-fancy-text {
   background: linear-gradient(200deg, #ee9804, #ffea00, #ee9804, #ffea00) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */
 
-.light-fancy-text {
+/* .light-fancy-text {
   background: linear-gradient(200deg, #00ce9a, #019913, #ad0404, #001885) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+} */

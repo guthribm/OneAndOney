@@ -35,6 +35,11 @@ if (currentDay === 0) {
 } else if (currentDay === 6) {
   saturday.classList.add("highlighted-day");
 }
-console.log(currentDay);
 
-console.log();
+// let exterior = document.getElementById("exterior-img");
+
+// function scrollHandler(e) {
+//   console.log(e);
+// }
+
+// exterior.addEventListener("click", (e) => console.log(e.target));
