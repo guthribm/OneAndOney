@@ -217,12 +217,6 @@ nav {
   text-align: left;
 }
 
-/* #dragon-image {
-  position: relative;
-  top: 0.5rem;
-  margin-top: 5rem;
-} */
-
 /* ------ INTRO SECTION ------ */
 
 #intro {
@@ -238,9 +232,9 @@ nav {
   box-shadow: 0 11px 4px inset rgba(0, 0, 0, 0.25);
 }
 
-/* #exterior-img {
-  transform: scale(1.25);
-} */
+#exterior-img {
+  margin: 1rem auto;
+}
 
 .intro-accent {
   font-weight: bolder;
@@ -335,6 +329,12 @@ nav {
   margin: 0 auto;
   filter: invert(48%) sepia(100%) saturate(306%) hue-rotate(86deg)
     brightness(108%) contrast(50%);
+}
+
+.wrap-3d {
+  transform-style: preserve-3d;
+  perspective: 200vw;
+  perspective-origin: 50% 50%;
 }
 
 /* ------ GELATO SECTION ------ */
@@ -487,8 +487,8 @@ a {
   box-shadow: 0px 0px 8px 2px rgba(93, 144, 192, 0.9);
 }
 
-#map-img {
-  margin: 0 auto;
+#google-map {
+  height: 50vh;
 }
 
 .highlighted-day {
@@ -515,7 +515,6 @@ tbody {
 }
 
 #texoma-link {
-  font-size: 1.2rem;
   font-weight: bolder;
 }
 
@@ -646,12 +645,12 @@ body {
   -webkit-transform: translateZ(-1px) scale(2);
 }
 
-.outer-shell {
+/* .outer-shell {
   width: 100%;
   background-color: white;
   perspective: 2px;
   -webkit-perspective: 2px;
   z-index: 1;
-}
+} */
 
 /* ------- end test for parallax scrolling ------- */
