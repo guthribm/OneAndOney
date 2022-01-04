@@ -130,6 +130,39 @@ nav {
   font-size: 1.5rem;
 }
 
+/* ------ STACKED SELECTORS ------ */
+
+#thai-section,
+#dirty-section,
+#gelato-section,
+#gg4-section {
+  background: linear-gradient(var(--dark-primary), var(--light-primary));
+  padding-top: 2rem;
+  font-family: var(--font-heading);
+  line-height: 1;
+}
+
+#location h2,
+#edibles-section h2,
+#concentrates h2,
+#prerolls h2 {
+  margin-top: 0;
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.location-text,
+.edibles-text,
+.concentrate-text,
+.preroll-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
 /* ------ Hero Container ------ */
 
 .hero-container {
@@ -223,15 +256,6 @@ nav {
 }
 
 /* ------ GG4 SECTION ------ */
-#thai-section,
-#dirty-section,
-#gelato-section,
-#gg4-section {
-  background: linear-gradient(var(--dark-primary), var(--light-primary));
-  padding-top: 2rem;
-  font-family: var(--font-heading);
-  line-height: 1;
-}
 
 .award {
   text-align: center;
@@ -252,7 +276,7 @@ nav {
 .award-img {
   z-index: 10;
   position: relative;
-  top: 2px;
+  top: 10px;
 }
 
 .text-box-secondary {
@@ -351,27 +375,6 @@ nav {
   color: var(--light-secondary);
 }
 
-#location h2,
-#edibles-section h2,
-#concentrates h2,
-#prerolls h2 {
-  margin-top: 0;
-  text-align: center;
-  font-family: var(--font-heading);
-}
-
-.location-text,
-.edibles-text,
-.concentrate-text,
-.preroll-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
 .preroll-text span {
   font-weight: bolder;
 }
@@ -429,6 +432,10 @@ nav {
 .location-text,
 #hours {
   color: var(--dark-primary);
+}
+
+#hours {
+  width: 100%;
 }
 
 #store-hrs {
@@ -516,7 +523,7 @@ tbody {
 }
 
 #texoma-link:visited {
-  color: rgb(1, 155, 1);
+  color: var(--light-primary);
 }
 
 #texoma-footer-logo {
@@ -555,21 +562,6 @@ tbody {
 
 /* ------ SPECIAL EFFECTS ------- */
 
-.parallax {
-  /* The image used */
-  background-image: url("images/interior_photo.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-}
-
 /* .dark-fancy-text {
   background: linear-gradient(200deg, #ee9804, #ffea00, #ee9804, #ffea00) fixed;
   background-clip: text;
@@ -601,7 +593,7 @@ body {
   -webkit-transform-style: preserve-3d;
 }
 
-.parallax-test {
+.parallax-interior {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -610,8 +602,33 @@ body {
   z-index: -1;
 }
 
-.parallax-test::after {
+.parallax-interior::after {
   background-image: url("images/interior_photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: -1;
+  content: "";
+  transform: translateZ(-1px) scale(2);
+  -webkit-transform: translateZ(-1px) scale(2);
+}
+
+.parallax-peices {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  z-index: -1;
+}
+
+.parallax-peices::after {
+  background-image: url("./images/peices.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -631,6 +648,7 @@ body {
   background-color: white;
   perspective: 2px;
   -webkit-perspective: 2px;
+  z-index: 1;
 }
 
 /* ------- end test for parallax scrolling ------- */
