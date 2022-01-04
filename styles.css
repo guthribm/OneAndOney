@@ -30,9 +30,9 @@ p {
   margin: 1rem;
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 h5 {
   margin: 0;
@@ -41,24 +41,6 @@ h5 {
 
 h5:last-of-type {
   margin-bottom: 0;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("images/interior_photo.jpg");
-
-  /* Full height */
-  height: 100%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-attachment: fixed;
-  -webkit-background-position: center;
-  -webkit-background-repeat: no-repeat;
-  -webkit-background-size: cover;
 }
 
 section {
@@ -104,6 +86,11 @@ li {
   font-weight: bolder;
   list-style: none;
   font-size: 1.75rem;
+}
+
+.dk-green-bg {
+  color: var(--light-secondary);
+  background: var(--dark-primary);
 }
 
 /* ------ Navigation Bar ------ */
@@ -206,7 +193,6 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 4rem 3rem;
   align-items: center;
   width: 100%;
   text-align: center;
@@ -216,9 +202,9 @@ nav {
   box-shadow: 0 11px 4px inset rgba(0, 0, 0, 0.25);
 }
 
-#exterior-img {
+/* #exterior-img {
   transform: scale(1.25);
-}
+} */
 
 .intro-accent {
   font-weight: bolder;
@@ -226,10 +212,9 @@ nav {
 
 .texoma-logo {
   padding: 0 1rem;
-  background: var(--dark-primary);
-  border-radius: 12px;
+  width: 100vw;
+  /* border-radius: 12px; */
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
-  color: var(--light-secondary);
 }
 
 .section {
@@ -268,46 +253,6 @@ nav {
   z-index: 10;
   position: relative;
   top: 2px;
-}
-
-.dark-fancy-top-text {
-  background: linear-gradient(
-      200deg,
-      var(--dark-secondary),
-      #035210,
-      #453422,
-      #43a36c
-    )
-    fixed;
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.dark-fancy-text {
-  background: linear-gradient(200deg, #008866, #005a0b, #640101, #008866) fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.light-fancy-text {
-  background: linear-gradient(
-      200deg,
-      var(--dark-secondary),
-      #dafc8b,
-      #f8ca4c,
-      #34f374
-    )
-    fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-box {
-  background: var(--dark-primary);
 }
 
 .text-box-secondary {
@@ -377,7 +322,6 @@ nav {
   background: var(--light-primary);
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
 }
@@ -391,11 +335,9 @@ nav {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  /* background: var(--light-secondary); */
   color: var(--dark-primary);
   text-align: center;
   border-radius: 12px;
-  /* box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25); */
 }
 
 #established span {
@@ -422,14 +364,11 @@ nav {
 .edibles-text,
 .concentrate-text,
 .preroll-text {
-  /* background: var(--light-primary); */
-  color: var(--dark-primary);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  /* box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25); */
   padding: 1rem;
 }
 
@@ -563,8 +502,6 @@ tbody {
   align-items: center;
   margin: 0 auto;
   padding: 2rem;
-  background: var(--dark-primary);
-  color: var(--light-secondary);
   font-weight: normal;
 }
 
@@ -615,4 +552,52 @@ tbody {
 .fa-copyright {
   color: var(--light-secondary);
   margin-right: 0.5rem;
+}
+
+/* ------ SPECIAL EFFECTS ------- */
+
+.parallax {
+  /* The image used */
+  background-image: url("images/interior_photo.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-attachment: fixed;
+  -webkit-background-position: center;
+  -webkit-background-repeat: no-repeat;
+  -webkit-background-size: cover;
+}
+
+.dark-fancy-top-text {
+  background: linear-gradient(
+      200deg,
+      var(--dark-secondary),
+      #035210,
+      #453422,
+      #43a36c
+    )
+    fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark-fancy-text {
+  background: linear-gradient(200deg, #ee9804, #ffea00, #ee9804, #ffea00) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.light-fancy-text {
+  background: linear-gradient(200deg, #00ce9a, #019913, #ad0404, #001885) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
