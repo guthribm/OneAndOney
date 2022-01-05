@@ -40,3 +40,8 @@ $("#close-menu").click(() => {
 $(".menu-link").click(() => {
   $(".menu").css("right", "-70vw");
 });
+
+let header = $("#nav");
+let sticky = header[0].offsetTop;
+
+console.log(sticky);

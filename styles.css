@@ -125,7 +125,9 @@ header {
   width: 100vw;
   position: sticky;
   top: 0;
-  padding-top: 60px;
+  /* padding-top: 60px; */
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 #oney-logo {
@@ -621,11 +623,12 @@ tbody {
 
 html {
   overflow: hidden;
+  height: 100vh;
 }
 
 body {
   width: 100vw;
-  height: 100vh;
+  height: 95%;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1px;
@@ -637,7 +640,7 @@ body {
 .parallax-interior {
   width: 100vw;
   max-width: 600px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -663,7 +666,7 @@ body {
 .parallax-peices {
   width: 100vw;
   max-width: 600px;
-  height: 100vh;
+  height: 100%;
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
@@ -695,7 +698,3 @@ body {
 } */
 
 /* ------- end test for parallax scrolling ------- */
-
-.change {
-  background: var(--light-primary);
-}
