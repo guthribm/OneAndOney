@@ -1,11 +1,3 @@
-let monday = document.getElementById("monday");
-let tuesday = document.getElementById("tuesday");
-let wednesday = document.getElementById("wednesday");
-let thursday = document.getElementById("thursday");
-let friday = document.getElementById("friday");
-let saturday = document.getElementById("saturday");
-let sunday = document.getElementById("sunday");
-
 let year = document.getElementById("year");
 
 let today = new Date();
@@ -21,25 +13,30 @@ function clearDays() {
 
 clearDays();
 if (currentDay === 0) {
-  sunday.classList.add("highlighted-day");
+  $("#sunday").addClass("highlighted-day");
 } else if (currentDay === 1) {
-  monday.classList.add("highlighted-day");
+  $("#monday").addClass("highlighted-day");
 } else if (currentDay === 2) {
-  tuesday.classList.add("highlighted-day");
+  $("#tuesday").addClass("highlighted-day");
 } else if (currentDay === 3) {
-  wednesday.classList.add("highlighted-day");
+  $("#wednesday").addClass("highlighted-day");
 } else if (currentDay === 4) {
-  thursday.classList.add("highlighted-day");
+  $("#thursday").addClass("highlighted-day");
 } else if (currentDay === 5) {
-  friday.classList.add("highlighted-day");
+  $("#friday").addClass("highlighted-day");
 } else if (currentDay === 6) {
-  saturday.classList.add("highlighted-day");
+  $("#saturday").addClass("highlighted-day");
 }
 
-// let exterior = document.getElementById("exterior-img");
+$("#hamburger").click(() => {
+  $(".menu").css("right", "0");
+});
 
-// function scrollHandler(e) {
-//   console.log(e);
-// }
+$("#close-menu").click(() => {
+  $(".menu").css("right", "-70vw");
+  $(".menu").css("transition", "1s");
+});
 
-// exterior.addEventListener("click", (e) => console.log(e.target));
+$(".menu-link").click(() => {
+  $(".menu").css("right", "-70vw");
+});

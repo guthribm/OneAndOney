@@ -96,7 +96,30 @@ li {
 
 /* ------ Navigation Bar ------ */
 
+.menu {
+  position: absolute;
+  background: var(--dark-primary);
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 70vw;
+  padding: 1rem;
+  transition: ease-in-out 0.5s;
+  right: -70vw;
+}
+
+.menu-link {
+  color: var(--light-secondary);
+  font-weight: normal;
+}
+
+#close-menu {
+  font-size: 2rem;
+  color: var(--dark-secondary);
+  margin: 1rem;
+}
+
 header {
+  display: flex;
   position: sticky;
   z-index: 100;
   top: 0;
@@ -242,6 +265,7 @@ nav {
 
 .texoma-logo {
   padding: 0 1rem;
+  margin: 2rem auto;
 
   /* border-radius: 12px; */
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
@@ -516,6 +540,7 @@ tbody {
 
 #texoma-link {
   font-weight: bolder;
+  font-size: 1.25rem;
 }
 
 #texoma-link:hover {
@@ -555,11 +580,18 @@ tbody {
 
 #year {
   color: var(--light-secondary);
-  margin-right: 1rem;
+  margin-right: 2rem;
+  margin-left: 0;
 }
 .fa-copyright {
   color: var(--light-secondary);
   margin-right: 0.5rem;
+}
+
+.copyright-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------ SPECIAL EFFECTS ------- */
@@ -597,6 +629,7 @@ body {
 
 .parallax-interior {
   width: 100vw;
+  max-width: 600px;
   height: 100vh;
   position: relative;
   transform-style: preserve-3d;
@@ -622,6 +655,7 @@ body {
 
 .parallax-peices {
   width: 100vw;
+  max-width: 600px;
   height: 100vh;
   position: relative;
   transform-style: preserve-3d;
@@ -654,3 +688,7 @@ body {
 } */
 
 /* ------- end test for parallax scrolling ------- */
+
+.change {
+  background: var(--light-primary);
+}
