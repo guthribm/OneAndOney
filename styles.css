@@ -108,6 +108,10 @@ li {
   z-index: 1001;
 }
 
+.menu-open {
+  right: 0;
+}
+
 .menu-link {
   color: var(--light-secondary);
   font-weight: normal;
@@ -160,6 +164,16 @@ nav {
 #hamburger {
   color: var(--light-secondary);
   font-size: 2rem;
+}
+
+#prerolls-target,
+#concentrates-target,
+#edibles-section-target,
+#location-target {
+  visibility: hidden;
+  bottom: 3rem;
+  background: transparent;
+  position: relative;
 }
 
 /* ------ STACKED SELECTORS ------ */

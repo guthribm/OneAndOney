@@ -29,16 +29,15 @@ if (currentDay === 0) {
 }
 
 $("#hamburger").click(() => {
-  $(".menu").css("right", "0");
+  $(".menu").toggleClass("menu-open");
 });
 
 $("#close-menu").click(() => {
-  $(".menu").css("right", "-70vw");
-  $(".menu").css("transition", "1s");
+  $(".menu").toggleClass("menu-open");
 });
 
 $(".menu-link").click(() => {
-  $(".menu").css("right", "-70vw");
+  $(".menu").toggleClass("menu-open");
 });
 
 let header = $("#nav");
