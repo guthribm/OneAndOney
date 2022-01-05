@@ -629,7 +629,7 @@ html {
 
 body {
   width: 100vw;
-  height: 95%;
+  height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 1px;
