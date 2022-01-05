@@ -121,7 +121,7 @@ li {
 header {
   display: flex;
   position: sticky;
-  z-index: 100;
+  z-index: 110;
   top: 0;
 }
 
@@ -137,7 +137,8 @@ nav {
   height: 60px;
   padding: 1rem;
   background-color: var(--dark-primary);
-
+  /* position: sticky; */
+  z-index: 105;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -212,6 +213,8 @@ nav {
   line-height: 1;
   display: flex;
   flex-direction: column;
+  position: sticky;
+  top: 2rem;
 }
 
 .accent {
@@ -224,6 +227,7 @@ nav {
   color: var(--light-secondary);
   margin-left: 2rem;
   margin-top: 2rem;
+  margin-bottom: 4rem;
   font-size: 0.7rem;
   position: sticky;
   top: 2rem;
@@ -289,7 +293,6 @@ nav {
 }
 
 .award-text {
-  padding-top: 2rem;
   position: sticky;
   top: 6rem;
   z-index: 2;
