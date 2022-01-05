@@ -98,7 +98,7 @@ li {
 
 .menu {
   position: absolute;
-  background: var(--dark-primary);
+  background: linear-gradient(var(--light-primary), var(--dark-primary));
   align-self: flex-start;
   justify-self: flex-start;
   width: 70vw;
