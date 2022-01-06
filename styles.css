@@ -128,6 +128,11 @@ li {
   font-weight: normal;
 }
 
+.menu-link:hover {
+  color: var(--light-secondary);
+  text-shadow: 0 0 4px var(--dark-secondary);
+}
+
 .menu-icon {
   margin-right: 1rem;
 }
@@ -144,6 +149,10 @@ li {
 .call-btn a {
   color: var(--dark-primary);
   font-weight: bolder;
+}
+
+.call-btn a:hover {
+  color: var(--dark-primary);
 }
 
 .call-btn:hover,
@@ -751,7 +760,7 @@ body {
   }
 
   nav {
-    height: 120px;
+    height: 80px;
   }
 
   section {
