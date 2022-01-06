@@ -117,6 +117,8 @@ li {
   transition: ease-in-out 0.5s;
   right: -400px;
   z-index: 1001;
+  height: 95vh;
+  max-height: 800px;
 }
 
 .menu-open {
