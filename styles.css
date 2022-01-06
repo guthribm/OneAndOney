@@ -155,7 +155,6 @@ li {
 #close-menu {
   font-size: 2rem;
   color: var(--dark-secondary);
-  margin: 1rem;
 }
 
 header {
@@ -194,10 +193,6 @@ nav {
 
 .logo-accent {
   color: var(--light-secondary);
-}
-
-.spin {
-  transform: rotate(180deg);
 }
 
 #hamburger {
@@ -273,7 +268,7 @@ nav {
   font-family: var(--font-heading);
   width: 80%;
   margin: auto;
-  font-size: 2.5rem;
+  font-size: 2rem;
   padding-bottom: 2rem;
   text-align: center;
   color: var(--light-secondary);
@@ -310,6 +305,7 @@ nav {
   margin: 0;
   padding: 0;
   text-align: left;
+  font-size: 0.75rem;
 }
 
 /* ------ INTRO SECTION ------ */
@@ -766,11 +762,29 @@ body {
     padding: 4rem;
   }
 
+  #hamburger {
+    margin-right: 2rem;
+  }
+
+  #nav-logo-img {
+    height: 3rem;
+  }
+
+  .oney-logo {
+    height: 3rem;
+    width: 50%;
+  }
+
+  #dirtys-img {
+    margin-top: 5rem;
+  }
+
   .hero-container {
     max-width: 100%;
   }
 
   .hero-subtitle {
+    padding-top: 4rem;
     font-size: 3.5rem;
   }
 
