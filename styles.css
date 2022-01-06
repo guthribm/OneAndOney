@@ -11,6 +11,7 @@
 ::after {
   box-sizing: border-box;
   /* border: 1px solid red; */
+  transition: all ease-in-out 250ms;
 }
 
 html {
@@ -107,6 +108,10 @@ li {
 /* ------ Navigation Bar ------ */
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
   position: absolute;
   background: linear-gradient(var(--light-primary), var(--dark-primary));
   align-self: flex-start;
@@ -121,6 +126,10 @@ li {
   max-height: 800px;
 }
 
+.menu li {
+  font-size: 1rem;
+}
+
 .menu-open {
   right: 0;
 }
@@ -128,6 +137,7 @@ li {
 .menu-link {
   color: var(--light-secondary);
   font-weight: normal;
+  font-size: 1.25rem;
 }
 
 .menu-link:hover {
@@ -167,6 +177,7 @@ li {
   font-size: 2rem;
   color: var(--dark-secondary);
   padding: 1rem;
+  align-self: flex-start;
 }
 
 header {
@@ -177,8 +188,8 @@ header {
   position: sticky;
   top: 0;
   /* padding-top: 60px; */
-  transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d;
+  /* transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d; */
 }
 
 #oney-logo {
@@ -281,7 +292,7 @@ nav {
   font-family: var(--font-heading);
   width: 80%;
   margin: auto;
-  font-size: 2rem;
+  font-size: 2.3rem;
   padding-bottom: 2rem;
   text-align: center;
   color: var(--light-secondary);
@@ -383,7 +394,7 @@ nav {
   margin: 0;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 0.7;
+  line-height: 0.4;
 }
 
 .award-text {
@@ -404,7 +415,7 @@ nav {
 
 .strain {
   text-align: center;
-  font-size: 7rem;
+  font-size: 6rem;
 
   margin: 0;
   margin-bottom: 3rem;
@@ -462,7 +473,7 @@ nav {
 /* ------ GELATO SECTION ------ */
 
 .gelato {
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 /* ------ OTHER PRODUCTS SECTION ------ */
@@ -637,6 +648,7 @@ tbody {
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  text-align: center;
 }
 
 .footer-title {
@@ -849,4 +861,17 @@ body {
   .strain {
     font-size: 10rem;
   }
+}
+
+/* ------- special effects start ------- */
+
+.invisible {
+  position: relative;
+  opacity: 1;
+  right: 0;
+}
+
+.fade-in {
+  right: 50%;
+  opacity: 0;
 }

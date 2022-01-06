@@ -40,7 +40,21 @@ $(".menu-link").click(() => {
   $(".menu").toggleClass("menu-open");
 });
 
-let header = $("#nav");
-let sticky = header[0].offsetTop;
+const introSection = document.querySelector("#intro");
+const sections = document.querySelectorAll(".invisible");
+const options = {
+  root: null,
+  threshold: 0,
+  rootMargin: "-125px 0px -125px 0px",
+};
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("fade-in");
+  });
+}, options);
 
-console.log(sticky);
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+// observer.observe(introSection);
