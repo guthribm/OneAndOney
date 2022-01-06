@@ -23,12 +23,13 @@ body {
   padding: 0;
   font-family: var(--font-primary);
   height: 100%;
+  font-size: 18px;
 }
 
 p {
   text-align: center;
-  margin: 1rem;
   width: 100%;
+  font-size: 1.25rem;
 }
 
 img {
@@ -42,6 +43,15 @@ h5 {
 
 h5:last-of-type {
   margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-secondary);
+}
+
+a:visited {
+  color: var(--dark-secondary);
 }
 
 section {
@@ -101,10 +111,11 @@ li {
   background: linear-gradient(var(--light-primary), var(--dark-primary));
   align-self: flex-start;
   justify-self: flex-start;
-  width: 70vw;
+  width: 90%;
+  max-width: 400px;
   padding: 1rem;
   transition: ease-in-out 0.5s;
-  right: -70vw;
+  right: -400px;
   z-index: 1001;
 }
 
@@ -115,6 +126,30 @@ li {
 .menu-link {
   color: var(--light-secondary);
   font-weight: normal;
+}
+
+.menu-icon {
+  margin-right: 1rem;
+}
+
+.call-btn {
+  border: 3px solid var(--light-secondary);
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  background: var(--dark-secondary);
+  color: var(--light-primary);
+}
+
+.call-btn a {
+  color: var(--dark-primary);
+  font-weight: bolder;
+}
+
+.call-btn:hover,
+.call-btn:focus {
+  background: var(--light-secondary);
+  box-shadow: 0 0 5px 2px var(--dark-secondary);
 }
 
 #close-menu {
@@ -159,6 +194,10 @@ nav {
 
 .logo-accent {
   color: var(--light-secondary);
+}
+
+.spin {
+  transform: rotate(180deg);
 }
 
 #hamburger {
@@ -206,7 +245,14 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+}
+
+.preroll-text > ul,
+.concentrate-text > ul,
+.edibles-text > ul {
+  color: var(--dark-secondary);
 }
 
 /* ------ Hero Container ------ */
@@ -215,6 +261,7 @@ nav {
   background: linear-gradient(var(--dark-primary), var(--light-primary));
   max-width: 600px;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .hero-image-background {
@@ -296,19 +343,36 @@ nav {
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
 }
 
+#texoma-link {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+#texoma-link:hover {
+  font-weight: normal;
+  color: rgb(18, 24, 114);
+  text-decoration: underline;
+}
+
+#texoma-link:visited {
+  color: var(--light-primary);
+}
+
 .section {
   padding: 2rem 1rem;
   font-size: 1.35rem;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ------ GG4 SECTION ------ */
 
 .award {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.75rem;
   color: var(--light-secondary);
   margin: 0;
-  padding: 0.25rem;
+  padding: 0.5rem;
   margin-bottom: 0.5rem;
   line-height: 0.7;
 }
@@ -377,6 +441,7 @@ nav {
   margin: 0 auto;
   filter: invert(48%) sepia(100%) saturate(306%) hue-rotate(86deg)
     brightness(108%) contrast(50%);
+  max-width: 400px;
 }
 
 .wrap-3d {
@@ -404,6 +469,8 @@ nav {
 .img {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
+  max-width: 800px;
+  margin: 0 auto 4rem;
 }
 
 #established {
@@ -442,6 +509,10 @@ nav {
 #concentrates {
   background: var(--light-primary);
   color: var(--light-secondary);
+}
+
+.concentrate-text p {
+  max-width: 800px;
 }
 
 /* ------ THAI SECTION ------ */
@@ -486,7 +557,7 @@ nav {
 }
 
 #hours {
-  width: 100%;
+  max-width: 800px;
 }
 
 #store-hrs {
@@ -497,17 +568,12 @@ nav {
   font-weight: bolder;
 }
 
-a {
-  text-decoration: none;
-}
-
 #google-map {
   width: 100%;
 }
 
 #direction-btn {
   margin: 2rem auto;
-  font-size: 1.25rem;
   color: var(--light-secondary);
   background: linear-gradient(
     45deg,
@@ -519,6 +585,7 @@ a {
   border: 3px solid var(--light-secondary);
   border-radius: 12px;
   font-weight: bolder;
+  font-size: 1rem;
   transition: 0.5s;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -537,6 +604,7 @@ a {
 
 #google-map {
   height: 50vh;
+  max-width: 800px;
 }
 
 .highlighted-day {
@@ -562,26 +630,6 @@ tbody {
   font-weight: normal;
 }
 
-#texoma-link {
-  font-weight: bolder;
-  font-size: 1.25rem;
-}
-
-#texoma-link:hover {
-  font-weight: normal;
-  color: rgb(18, 24, 114);
-  text-decoration: underline;
-}
-
-#texoma-link:visited {
-  color: var(--light-primary);
-}
-
-#texoma-footer-logo {
-  width: 100px;
-  margin: 1rem auto 0;
-}
-
 .footer-title {
   font-family: var(--font-heading);
   color: var(--dark-secondary);
@@ -602,6 +650,14 @@ tbody {
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.25);
 }
 
+#nav-logo-img {
+  height: 2rem;
+}
+
+.oney-logo {
+  height: 1.75rem;
+}
+
 #year {
   color: var(--light-secondary);
   margin-right: 2rem;
@@ -620,22 +676,7 @@ tbody {
 
 /* ------ SPECIAL EFFECTS ------- */
 
-/* .dark-fancy-text {
-  background: linear-gradient(200deg, #ee9804, #ffea00, #ee9804, #ffea00) fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-/* .light-fancy-text {
-  background: linear-gradient(200deg, #00ce9a, #019913, #ad0404, #001885) fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-/* ------- test for parallax scrolling ------- */
-
+/* ------- start parallax scrolling ------- */
 html {
   overflow: hidden;
   height: 100vh;
@@ -654,7 +695,7 @@ body {
 
 .parallax-interior {
   width: 100vw;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
@@ -680,7 +721,7 @@ body {
 
 .parallax-peices {
   width: 100vw;
-  max-width: 600px;
+  /* max-width: 600px; */
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
@@ -704,12 +745,81 @@ body {
   -webkit-transform: translateZ(-1px) scale(2);
 }
 
-/* .outer-shell {
-  width: 100%;
-  background-color: white;
-  perspective: 2px;
-  -webkit-perspective: 2px;
-  z-index: 1;
-} */
+/* ------- end parallax scrolling ------- */
 
-/* ------- end test for parallax scrolling ------- */
+/* ------- MEDIA QUERIES (min-width:600px) ------- */
+
+@media (min-width: 600px) {
+  html {
+    font-size: 24px;
+  }
+
+  nav {
+    height: 120px;
+  }
+
+  section {
+    max-width: 100%;
+  }
+
+  .section {
+    padding: 4rem;
+  }
+
+  .hero-container {
+    max-width: 100%;
+  }
+
+  .hero-subtitle {
+    font-size: 3.5rem;
+  }
+
+  .hero-caption {
+    margin: 4rem auto 0 3rem;
+  }
+
+  #exterior-img {
+    max-width: 700px;
+  }
+
+  .award {
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0;
+  }
+
+  .strain {
+    font-size: 8rem;
+  }
+
+  .parallax-interior::after {
+    background-image: url("./images/interior_desktop.jpg");
+  }
+
+  #location h2,
+  #edibles-section h2,
+  #concentrates h2,
+  #prerolls h2 {
+    font-size: 4rem;
+  }
+
+  .location-text,
+  .edibles-text,
+  .concentrate-text,
+  .preroll-text {
+    padding: 3rem;
+  }
+
+  #footer-top h5 {
+    font-size: 1rem;
+  }
+}
+/* ------- END MEDIA QUERIES (min-width:600px) ------- */
+
+/* ------- MEDIA QUERIES (min-width:900px) ------- */
+
+@media (min-width: 900px) {
+  .strain {
+    font-size: 10rem;
+  }
+}
