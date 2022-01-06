@@ -166,6 +166,7 @@ li {
 #close-menu {
   font-size: 2rem;
   color: var(--dark-secondary);
+  padding: 1rem;
 }
 
 header {
