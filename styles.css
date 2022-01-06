@@ -212,6 +212,9 @@ nav {
   font-size: 2rem;
 }
 
+/* ------ STACKED SELECTORS ------ */
+
+#home-target,
 #prerolls-target,
 #concentrates-target,
 #edibles-section-target,
@@ -221,8 +224,6 @@ nav {
   background: transparent;
   position: relative;
 }
-
-/* ------ STACKED SELECTORS ------ */
 
 #thai-section,
 #dirty-section,
