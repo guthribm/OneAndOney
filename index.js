@@ -40,12 +40,11 @@ $(".menu-link").click(() => {
   $(".menu").toggleClass("menu-open");
 });
 
-const introSection = document.querySelector("#intro");
 const sections = document.querySelectorAll(".invisible");
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: "-125px 0px -125px 0px",
+  rootMargin: "0px 0px -125px 0px",
 };
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
@@ -57,4 +56,35 @@ sections.forEach((section) => {
   observer.observe(section);
 });
 
-// observer.observe(introSection);
+const options2 = {
+  root: null,
+  threshold: 0,
+  rootMargin: "0px 0px -100px 0px",
+};
+
+const awardTexts = document.querySelectorAll(".strain");
+
+const flashObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("flash");
+  });
+}, options2);
+
+awardTexts.forEach((section) => {
+  flashObserver.observe(section);
+});
+
+// const flowerType = document.querySelectorAll(".flower-text");
+
+// const slideLeftObserver = new IntersectionObserver(function (
+//   entries,
+//   observer
+// ) {
+//   entries.forEach((entry) => {
+//     entry.target.classList.toggle("slide-left");
+//   });
+// });
+
+// flowerType.forEach((section) => {
+//   slideLeftObserver.observe(section);
+// });
