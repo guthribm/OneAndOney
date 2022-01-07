@@ -452,7 +452,7 @@ nav {
   align-items: center;
   color: var(--dark-primary);
   background: linear-gradient(var(--light-secondary), var(--dark-secondary));
-
+  padding: 4rem 1rem;
   text-align: center;
   box-shadow: 0 11px 4px inset rgba(0, 0, 0, 0.25);
 }
