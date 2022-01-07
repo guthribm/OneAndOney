@@ -11,7 +11,7 @@
 ::after {
   box-sizing: border-box;
   /* border: 1px solid red; */
-  transition: all ease-in-out 250ms;
+  transition: all ease-in-out 500ms;
 }
 
 html {
@@ -64,9 +64,13 @@ td {
   padding: 0.25rem;
 }
 
+tbody {
+  gap: 0;
+}
+
 hr {
   border-bottom: 4px solid var(--dark-primary);
-  width: 90vw;
+  width: 50vw;
 }
 
 /* ------ ADDS SCROLLING GRADIENT BACKGROUND EFFECT ------- */
@@ -401,6 +405,8 @@ nav {
   font-size: 1.35rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ------ GG4 SECTION ------ */
@@ -409,10 +415,10 @@ nav {
   text-align: center;
   font-size: 1.75rem;
   color: var(--light-secondary);
-  margin: 0;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   line-height: 0.2;
+  margin: 0;
 }
 
 .award-text {
@@ -446,6 +452,7 @@ nav {
 /* ------ FLOWER TYPE SECTION ------ */
 
 #flower-type {
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -472,6 +479,7 @@ nav {
 
 #pot-leaf {
   margin: 0 auto;
+  padding: 2rem;
   filter: invert(48%) sepia(100%) saturate(306%) hue-rotate(86deg)
     brightness(108%) contrast(50%);
   width: 80%;
@@ -516,6 +524,8 @@ nav {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--light-secondary);
   text-align: center;
   border-radius: 12px;
@@ -706,6 +716,7 @@ tbody {
   color: var(--light-secondary);
   margin-right: 2rem;
   margin-left: 0;
+  font-size: 0.75rem;
 }
 .fa-copyright {
   color: var(--light-secondary);
@@ -716,6 +727,7 @@ tbody {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.75rem;
 }
 
 /* ------ SPECIAL EFFECTS ------- */
@@ -855,7 +867,7 @@ body {
   }
 
   .parallax-interior::after {
-    background-image: url("./images/interior_desktop.jpg");
+    background-image: url("./images/interior_desktop.webp");
   }
 
   #location h2,
@@ -883,6 +895,48 @@ body {
 @media (min-width: 900px) {
   .strain {
     font-size: 10rem;
+    margin: 1rem auto 3rem;
+  }
+
+  .award {
+    line-height: 1.5;
+  }
+
+  #location p,
+  #established p,
+  #intro p {
+    width: 60vw;
+  }
+
+  .concentrate-text p,
+  .edibles-text p,
+  .preroll-text p {
+    font-size: 1.5rem;
+  }
+
+  .award-text {
+    margin-top: 4rem;
+  }
+
+  .hero-text {
+    width: 80vw;
+    margin: 0 auto 2rem;
+  }
+
+  .edibles-text ul,
+  #established ul,
+  .preroll-text ul,
+  .concentrate-text ul {
+    display: flex;
+    width: 75%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  li {
+    padding: 1rem;
+    margin: 1rem;
   }
 }
 
