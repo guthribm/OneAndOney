@@ -383,6 +383,7 @@ nav {
   font-weight: bolder;
   font-size: 1rem;
   margin-top: -1rem;
+  color: var(--dark-primary);
 }
 
 #texoma-link:hover {
