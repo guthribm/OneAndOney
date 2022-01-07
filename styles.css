@@ -748,7 +748,7 @@ body {
 }
 
 .parallax-interior::after {
-  background-image: url("images/interior_photo.jpg");
+  background-image: url("images/interior_photo.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -774,7 +774,7 @@ body {
 }
 
 .parallax-peices::after {
-  background-image: url("./images/peices.jpg");
+  background-image: url("./images/peices.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
