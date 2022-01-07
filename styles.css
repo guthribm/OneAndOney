@@ -598,6 +598,7 @@ nav {
   max-width: 800px;
   width: 100%;
   background: var(--dark-secondary);
+  margin-bottom: 2rem;
 }
 
 #store-hrs {
@@ -606,6 +607,7 @@ nav {
   font-size: 2rem;
   margin: 0 auto;
   font-weight: bolder;
+  padding-bottom: 1rem;
 }
 
 #google-map {
