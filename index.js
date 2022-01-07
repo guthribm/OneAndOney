@@ -73,18 +73,3 @@ const flashObserver = new IntersectionObserver(function (entries, observer) {
 awardTexts.forEach((section) => {
   flashObserver.observe(section);
 });
-
-// const flowerType = document.querySelectorAll(".flower-text");
-
-// const slideLeftObserver = new IntersectionObserver(function (
-//   entries,
-//   observer
-// ) {
-//   entries.forEach((entry) => {
-//     entry.target.classList.toggle("slide-left");
-//   });
-// });
-
-// flowerType.forEach((section) => {
-//   slideLeftObserver.observe(section);
-// });

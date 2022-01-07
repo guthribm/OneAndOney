@@ -60,6 +60,15 @@ section {
   margin: auto;
 }
 
+td {
+  padding: 0.25rem;
+}
+
+hr {
+  border-bottom: 4px solid var(--dark-primary);
+  width: 90vw;
+}
+
 /* ------ ADDS SCROLLING GRADIENT BACKGROUND EFFECT ------- */
 /* body {
   background: linear-gradient(
@@ -98,6 +107,7 @@ li {
   font-weight: bolder;
   list-style: none;
   font-size: 1.75rem;
+  color: var(--dark-secondary);
 }
 
 .dk-green-bg {
@@ -151,11 +161,12 @@ li {
 
 .call-btn {
   border: 3px solid var(--light-secondary);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 12px;
   margin: 2rem auto;
   background: var(--dark-secondary);
   color: var(--light-primary);
+  width: 80%;
 }
 
 .call-btn a {
@@ -178,6 +189,8 @@ li {
   color: var(--dark-secondary);
   padding: 1rem;
   align-self: flex-start;
+  position: absolute;
+  top: 0;
 }
 
 header {
@@ -218,9 +231,13 @@ nav {
   color: var(--light-secondary);
 }
 
+#nav-logo-img-container {
+  display: flex;
+}
+
 #hamburger {
   color: var(--light-secondary);
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 /* ------ STACKED SELECTORS ------ */
@@ -264,7 +281,6 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-  padding: 1rem 2rem;
   font-size: 1rem;
 }
 
@@ -290,10 +306,10 @@ nav {
 
 .hero-subtitle {
   font-family: var(--font-heading);
-  width: 80%;
+
   margin: auto;
   font-size: 2.3rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
   text-align: center;
   color: var(--light-secondary);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -366,6 +382,7 @@ nav {
 #texoma-link {
   font-weight: bolder;
   font-size: 1rem;
+  margin-top: -1rem;
 }
 
 #texoma-link:hover {
@@ -394,7 +411,7 @@ nav {
   margin: 0;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 0.4;
+  line-height: 0.2;
 }
 
 .award-text {
@@ -409,14 +426,9 @@ nav {
   top: 5px;
 }
 
-.text-box-secondary {
-  background: var(--dark-secondary);
-}
-
 .strain {
   text-align: center;
   font-size: 6rem;
-
   margin: 0;
   margin-bottom: 3rem;
   padding: 0;
@@ -461,14 +473,20 @@ nav {
   margin: 0 auto;
   filter: invert(48%) sepia(100%) saturate(306%) hue-rotate(86deg)
     brightness(108%) contrast(50%);
+  width: 80%;
   max-width: 400px;
+  position: absolute;
 }
 
-.wrap-3d {
+.flower-text {
+  z-index: 2;
+}
+
+/* .wrap-3d {
   transform-style: preserve-3d;
   perspective: 200vw;
   perspective-origin: 50% 50%;
-}
+} */
 
 /* ------ GELATO SECTION ------ */
 
@@ -479,7 +497,7 @@ nav {
 /* ------ OTHER PRODUCTS SECTION ------ */
 
 #other-products {
-  background: var(--light-primary);
+  background: linear-gradient(var(--light-primary), var(--dark-primary));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -490,14 +508,14 @@ nav {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
   max-width: 800px;
-  margin: 0 auto 4rem;
+  margin: 0 auto 2rem;
 }
 
 #established {
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
-  color: var(--dark-primary);
+  color: var(--light-secondary);
   text-align: center;
   border-radius: 12px;
 }
@@ -509,7 +527,7 @@ nav {
 /* ------ PREROLLS SECTION ------ */
 
 #prerolls {
-  background: var(--light-primary);
+  background: linear-gradient(var(--dark-primary), var(--light-primary));
   color: var(--light-secondary);
 }
 
@@ -527,7 +545,7 @@ nav {
 /* ------ CONCENTRATES SECTION ------ */
 
 #concentrates {
-  background: var(--light-primary);
+  background: linear-gradient(var(--light-primary), var(--dark-primary));
   color: var(--light-secondary);
 }
 
@@ -552,7 +570,7 @@ nav {
 /* ------ EDIBLES SECTION ------ */
 
 #edibles-section {
-  background: var(--light-primary);
+  background: linear-gradient(var(--dark-primary), var(--light-primary));
   color: var(--light-secondary);
 }
 
@@ -578,6 +596,8 @@ nav {
 
 #hours {
   max-width: 800px;
+  width: 100%;
+  background: var(--dark-secondary);
 }
 
 #store-hrs {
@@ -594,7 +614,7 @@ nav {
 
 #direction-btn {
   margin: 2rem auto;
-  color: var(--light-secondary);
+  color: var(--dark-secondary);
   background: linear-gradient(
     45deg,
     var(--light-primary),
@@ -602,7 +622,7 @@ nav {
     var(--light-primary)
   );
   padding: 0.5rem 1rem;
-  border: 3px solid var(--light-secondary);
+  border: 3px solid transparent;
   border-radius: 12px;
   font-weight: bolder;
   font-size: 1rem;
@@ -869,6 +889,9 @@ body {
   position: relative;
   opacity: 1;
   right: 0;
+  transition: 0.5s ease-in-out;
+  line-height: 1;
+  margin: 1rem auto;
 }
 
 .fade-in {
@@ -877,24 +900,11 @@ body {
 }
 
 .strain {
-  transition: transform 0.5s ease-in;
+  transition: transform 0.75s ease-in-out;
 }
 
 .flash {
   transform: scale(0.35);
   opacity: 0;
   transition: transform 0.5s ease-in;
-}
-
-.flower-text {
-  position: relative;
-  left: 0;
-}
-
-.slide-left {
-  left: 50%;
-}
-
-.slide-right {
-  right: 50%;
 }
