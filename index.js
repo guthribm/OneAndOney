@@ -30,14 +30,17 @@ if (currentDay === 0) {
 
 $("#hamburger").click(() => {
   $(".menu").toggleClass("menu-open");
+  $("#close-menu").toggleClass("spin");
 });
 
 $("#close-menu").click(() => {
   $(".menu").toggleClass("menu-open");
+  $("#close-menu").toggleClass("spin");
 });
 
 $(".menu-link").click(() => {
   $(".menu").toggleClass("menu-open");
+  $("#close-menu").toggleClass("spin");
 });
 
 const sections = document.querySelectorAll(".invisible");
