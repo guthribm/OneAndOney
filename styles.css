@@ -845,6 +845,10 @@ body {
     height: 80px;
   }
 
+  #call-btn-container {
+    display: none;
+  }
+
   section {
     max-width: 100%;
   }
