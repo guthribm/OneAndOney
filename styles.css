@@ -151,6 +151,10 @@ li {
   font-weight: normal;
 }
 
+.menu-link:visited {
+  color: var(--light-secondary);
+}
+
 .menu-link:hover {
   color: var(--light-secondary);
   text-shadow: 0 0 4px var(--dark-secondary);
@@ -176,8 +180,8 @@ li {
   margin: 3rem auto 0;
 }
 
-#call-btn-container:hover,
-#call-btn-container:focus {
+#call-btn:hover,
+#call-btn:focus {
   background: var(--light-secondary);
   box-shadow: 0 0 5px 2px var(--dark-secondary);
 }
