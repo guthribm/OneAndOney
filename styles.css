@@ -270,9 +270,11 @@ nav {
 #edibles-section h2,
 #concentrates h2,
 #prerolls h2 {
-  margin-top: 0;
+  margin: 0;
   text-align: center;
   font-family: var(--font-heading);
+  font-size: 2.5rem;
+  letter-spacing: 1px;
 }
 
 .location-text,
@@ -400,12 +402,13 @@ nav {
 }
 
 .section {
-  padding: 2rem 1rem;
+  padding: 2rem 1.5rem;
   font-size: 1.35rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0.55px;
 }
 
 /* ------ GG4 SECTION ------ */
@@ -416,8 +419,9 @@ nav {
   color: var(--light-secondary);
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 0.2;
+  line-height: 0.7;
   margin: 0;
+  letter-spacing: 0.5px;
 }
 
 .award-text {
@@ -454,7 +458,7 @@ nav {
   min-height: 450px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   color: var(--dark-primary);
   background: linear-gradient(var(--light-secondary), var(--dark-secondary));
@@ -516,11 +520,10 @@ nav {
   box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
   margin-bottom: 2rem;
   max-width: 800px;
-  margin: 0 auto 2rem;
+  margin: 2rem auto;
 }
 
 #established {
-  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -604,6 +607,10 @@ nav {
   color: var(--dark-primary);
 }
 
+.location-body {
+  margin: 4rem auto;
+}
+
 #hours {
   max-width: 800px;
   width: 100%;
@@ -616,7 +623,7 @@ nav {
   color: var(--dark-primary);
   font-size: 2rem;
   margin: 0 auto;
-  font-weight: bolder;
+  /* font-weight: bolder; */
   padding-bottom: 1rem;
 }
 
@@ -626,7 +633,7 @@ nav {
 
 #direction-btn {
   margin: 2rem auto;
-  color: var(--dark-secondary);
+  color: var(--light-secondary);
   background: linear-gradient(
     45deg,
     var(--light-primary),
@@ -635,11 +642,12 @@ nav {
   );
   padding: 0.5rem 1rem;
   border: 3px solid transparent;
-  border-radius: 12px;
+  /* border-radius: 12px; */
   font-weight: bolder;
   font-size: 1rem;
   transition: 0.5s;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
 }
 
 #direction-btn:hover,
