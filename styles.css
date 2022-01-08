@@ -64,33 +64,6 @@ hr {
   width: 70vw;
 }
 
-/* ------ ADDS SCROLLING GRADIENT BACKGROUND EFFECT ------- */
-/* body {
-  background: linear-gradient(
-    to bottom,
-    var(--light-primary),
-    #14dea8,
-    #f4eea9,
-    #912200
-  );
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: -1;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.1),
-    #064635 75%
-  );
-} */
-
 ul {
   text-align: center;
   margin-top: 0;
@@ -212,9 +185,6 @@ header {
   width: 100vw;
   position: sticky;
   top: 0;
-  /* padding-top: 60px; */
-  /* transform-style: preserve-3d;
-  -webkit-transform-style: preserve-3d; */
 }
 
 #oney-logo {
@@ -388,8 +358,6 @@ nav {
 .texoma-logo {
   padding: 0 1rem;
   margin: 2rem auto;
-
-  /* border-radius: 12px; */
   box-shadow: -9px 11px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -503,12 +471,6 @@ nav {
 .flower-text {
   z-index: 2;
 }
-
-/* .wrap-3d {
-  transform-style: preserve-3d;
-  perspective: 200vw;
-  perspective-origin: 50% 50%;
-} */
 
 /* ------ GELATO SECTION ------ */
 
@@ -649,14 +611,17 @@ nav {
     var(--dark-primary),
     var(--light-primary)
   );
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.25rem;
   border: 3px solid transparent;
-  /* border-radius: 12px; */
   font-weight: bolder;
   font-size: 1rem;
   transition: 0.5s;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
   max-width: 300px;
+}
+
+#direction-btn p {
+  margin: 0;
 }
 
 #direction-btn:hover,
@@ -719,7 +684,7 @@ tbody {
 }
 
 .footer-link p {
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   margin: 0 auto;
   color: inherit;
   font-weight: bolder;
@@ -786,7 +751,6 @@ body {
 
 .parallax-interior {
   width: 100vw;
-  /* max-width: 600px; */
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
@@ -812,7 +776,6 @@ body {
 
 .parallax-peices {
   width: 100vw;
-  /* max-width: 600px; */
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
