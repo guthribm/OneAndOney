@@ -46,7 +46,7 @@
       <div class="menu">
         <i id="close-menu" class="fas fa-times"></i>
 
-        <ul>
+        <ul class="menu-list">
           <li><a class="menu-link" href="#home-target">Home</a></li>
           <li><a class="menu-link" href="#prerolls-target">Prerolls</a></li>
           <li>
@@ -58,8 +58,10 @@
           <li><a class="menu-link" href="#location-target">Directions</a></li>
           <li><a class="menu-link" href="#footer-top">Social Media</a></li>
 
-          <li class="call-btn">
-            <a class="menu-link" href="tel:+1-580-505-0261">CALL</a>
+          <li id="call-btn-container">
+            <a id="call-btn" class="menu-link" href="tel:+1-580-505-0261"
+              >CALL</a
+            >
           </li>
         </ul>
       </div>
@@ -323,8 +325,14 @@
           <strong>Main Street</strong> in Idabel, OK, The One and Oney is open 7
           days a week.
         </p>
+        <a
+          href="https://goo.gl/maps/aFKADq7T8CCM3yQj6"
+          rel="noreferrer noopener"
+          target="_blank"
+          ><p id="direction-btn">GET DIRECTIONS</p></a
+        >
         <hr />
-        <table id="hours">
+        <table cellspacing="0" cellpadding="0" id="hours">
           <tr>
             <thead>
               <p id="store-hrs">Store Hours</p>
@@ -360,14 +368,14 @@
           </tr>
         </table>
         <hr />
-        <a
+        <!-- <a
           href="https://goo.gl/maps/aFKADq7T8CCM3yQj6"
           rel="noreferrer noopener"
           target="_blank"
           ><p id="direction-btn">GET DIRECTIONS</p></a
-        >
+        > -->
 
-        <iframe
+        <!-- <iframe
           id="google-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.7730038717996!2d-94.83016248541169!3d33.89549953342264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86356f239b77722b%3A0xa42ac001edd8c30a!2sThe%20One%20%26%20Oney!5e0!3m2!1sen!2sus!4v1640979731395!5m2!1sen!2sus"
           width="600"
@@ -375,7 +383,7 @@
           style="border: 0"
           allowfullscreen=""
           loading="lazy"
-        ></iframe>
+        ></iframe> -->
       </div>
       <!-- close location-text div -->
     </section>
@@ -384,15 +392,31 @@
     <footer>
       <div id="footer-top" class="dk-green-bg">
         <h4 class="footer-title">Don't forget to follow us on social media!</h4>
-        <i class="fab fa-facebook footer-icon"></i>
-        <h5>facebook.com/address/here</h5>
 
-        <i class="fab fa-instagram-square footer-icon"></i>
-        <h5>instagram.com/address/here</h5>
-        <i class="fas fa-envelope footer-icon"></i>
-        <h5>emailaddress@email.com</h5>
-        <i class="fas fa-phone-square-alt footer-icon"></i>
-        <h5><a href="tel:+1-580-505-0261">1 (580) 505-0261</a></h5>
+        <a
+          class="footer-link"
+          rel="noreferrer noopener"
+          target="_blank"
+          href="https://www.facebook.com/theoneandoneydispo/"
+          ><div>
+            <i class="fab fa-facebook footer-icon"></i>
+            <p>facebook.com/theoneandoneydispo/</p>
+          </div></a
+        >
+
+        <a class="footer-link" href="mailto:tessa.oney@gmail.com"
+          ><div>
+            <i class="fas fa-envelope footer-icon"></i>
+            <p>tessa.oney@gmail.com</p>
+          </div></a
+        >
+
+        <a class="footer-link" href="tel:+1-580-505-0261"
+          ><div>
+            <i class="fas fa-phone-square-alt footer-icon"></i>
+            <p>1 (580) 505-0261</p>
+          </div></a
+        >
       </div>
       <div id="footer-bottom">
         <img

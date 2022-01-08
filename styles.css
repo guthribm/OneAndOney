@@ -37,15 +37,6 @@ img {
   width: 100%;
 }
 
-h5 {
-  margin: 0;
-  margin-bottom: 1.5rem;
-}
-
-h5:last-of-type {
-  margin-bottom: 0;
-}
-
 a {
   text-decoration: none;
   color: var(--dark-secondary);
@@ -61,7 +52,7 @@ section {
 }
 
 td {
-  padding: 0.25rem;
+  padding: 0.5rem;
 }
 
 tbody {
@@ -125,22 +116,30 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   position: absolute;
   background: linear-gradient(var(--light-primary), var(--dark-primary));
   align-self: flex-start;
   justify-self: flex-start;
   width: 90%;
   max-width: 400px;
-  padding: 1rem;
+  padding: 3rem 2rem 2rem;
   transition: ease-in-out 0.5s;
   right: -400px;
   z-index: 1001;
   height: 95vh;
 }
 
-.menu li {
-  font-size: 1rem;
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.menu-list li {
+  margin: 0;
 }
 
 .menu-open {
@@ -148,9 +147,8 @@ li {
 }
 
 .menu-link {
-  color: var(--light-secondary);
-  font-weight: normal;
   font-size: 1.25rem;
+  font-weight: normal;
 }
 
 .menu-link:hover {
@@ -162,27 +160,24 @@ li {
   margin-right: 1rem;
 }
 
-.call-btn {
-  border: 3px solid var(--light-secondary);
-  padding: 0.25rem 0.5rem;
-  border-radius: 12px;
-  margin: 2rem auto;
+#call-btn-container {
+  margin: 4rem auto 0;
+  width: 100%;
+  padding: 0;
+}
+
+#call-btn {
   background: var(--dark-secondary);
-  color: var(--light-primary);
-  width: 80%;
-}
-
-.call-btn a {
+  display: block;
   color: var(--dark-primary);
+  font-family: var(--font-heading);
   font-weight: bolder;
+  padding: 0.5rem 1.5rem;
+  margin: 3rem auto 0;
 }
 
-.call-btn a:hover {
-  color: var(--dark-primary);
-}
-
-.call-btn:hover,
-.call-btn:focus {
+#call-btn-container:hover,
+#call-btn-container:focus {
   background: var(--light-secondary);
   box-shadow: 0 0 5px 2px var(--dark-secondary);
 }
@@ -194,6 +189,7 @@ li {
   align-self: flex-start;
   position: absolute;
   top: 0;
+  left: 0;
 }
 
 header {
@@ -488,6 +484,7 @@ nav {
   width: 80%;
   max-width: 400px;
   position: absolute;
+  opacity: 0.4;
 }
 
 .flower-text {
@@ -600,6 +597,7 @@ nav {
 
 #location h2 {
   line-height: 1;
+  margin-top: 2rem;
 }
 
 .location-text,
@@ -608,23 +606,21 @@ nav {
 }
 
 .location-body {
-  margin: 4rem auto;
+  margin: 4rem auto 0;
 }
 
 #hours {
   max-width: 800px;
   width: 100%;
   background: var(--dark-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 #store-hrs {
   font-family: var(--font-heading);
   color: var(--dark-primary);
   font-size: 2rem;
-  margin: 0 auto;
-  /* font-weight: bolder; */
-  padding-bottom: 1rem;
+  margin: 2rem auto 0;
 }
 
 #google-map {
@@ -632,7 +628,7 @@ nav {
 }
 
 #direction-btn {
-  margin: 2rem auto;
+  margin: 4rem auto;
   color: var(--light-secondary);
   background: linear-gradient(
     45deg,
@@ -697,10 +693,34 @@ tbody {
   font-size: 1.5rem;
 }
 
+.footer-link {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--dark-secondary);
+  color: var(--dark-primary);
+}
+
+.footer-link:hover {
+  background: var(--light-secondary);
+  border-radius: 6px;
+  transform: scale(1.1);
+}
+
+.footer-link p {
+  font-size: 0.55rem;
+  margin: 0 auto;
+  color: inherit;
+  font-weight: bolder;
+}
+
 .footer-icon {
   margin-bottom: 0.5rem;
   font-size: 1.5rem;
-  color: var(--dark-secondary);
+  color: var(--dark-primary);
 }
 
 #footer-bottom {
@@ -712,7 +732,7 @@ tbody {
 }
 
 #nav-logo-img {
-  height: 2rem;
+  height: 2.3rem;
 }
 
 .oney-logo {
@@ -904,6 +924,10 @@ body {
 @media (min-width: 900px) {
   .award {
     line-height: 1.5;
+  }
+
+  #call-btn-container {
+    margin-top: 2rem;
   }
 
   #location p,
