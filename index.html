@@ -90,13 +90,25 @@
       <!-- close hero-text container -->
       <div class="hero-image">
         <div class="hero-image-background">
-          <img
-            class="award-img"
-            id="dragon-image"
-            src="./images/little_dragon_png_nobackground.webp"
-            alt="little dragon"
-            width="100%"
-          />
+          <picture>
+            <source
+              srcset="./images/little_dragon_png_nobackground.webp"
+              type="image/webp"
+              media="all and (max-width:600px)"
+            />
+            <source
+              srcset="./images/little_dragon_desktop.webp"
+              type="image/webp"
+              media="all and (min-width:901px)"
+            />
+            <img
+              class="award-img"
+              id="dragon-image"
+              src="./images/little_dragon_png_nobackground.webp"
+              alt="little dragon"
+              width="100%"
+            />
+          </picture>
         </div>
         <!-- close hero-image-background container -->
       </div>
@@ -144,12 +156,24 @@
         <p class="strain">GG #4</p>
       </div>
       <!-- close gg4-text -->
-      <img
-        class="award-img"
-        src="./images/gg4_blur_no_background.webp"
-        alt="gorilla glue #4"
-        width="100%"
-      />
+      <picture>
+        <source
+          srcset="./images/gg4_blur_no_background.webp"
+          type="image/webp"
+          media="all and (max-width:600px)"
+        />
+        <source
+          srcset="./images/gg4_desktop.webp"
+          type="image/webp"
+          media="all and (min-width:901px)"
+        />
+        <img
+          class="award-img"
+          src="./images/gg4_blur_no_background.webp"
+          alt="gorilla glue #4"
+          width="100%"
+        />
+      </picture>
     </section>
     <!-- close gg4-section section -->
 
@@ -178,12 +202,24 @@
         <p class="strain gelato">GELATO</p>
       </div>
       <!-- close gelato-text -->
-      <img
-        class="award-img"
-        src="./images/gelato.no_background_png.webp"
-        alt="gorilla glue #4"
-        width="100%"
-      />
+      <picture>
+        <source
+          srcset="./images/gelato.no_background_png.webp"
+          type="image/webp"
+          media="all and (max-width:600px)"
+        />
+        <source
+          srcset="./images/gelato_desktop.webp"
+          type="image/webp"
+          media="all and (min-width:901px)"
+        />
+        <img
+          class="award-img"
+          src="./images/gelato.no_background_png.webp"
+          alt="gelato"
+          width="100%"
+        />
+      </picture>
     </section>
     <!-- close gelato-section section -->
 

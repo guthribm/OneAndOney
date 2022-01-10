@@ -137,12 +137,12 @@ li {
 }
 
 .menu-link:visited {
-  color: var(--light-secondary);
+  color: var(--dark-secondary);
 }
 
 .menu-link:hover {
-  color: var(--light-secondary);
-  text-shadow: 0 0 4px var(--dark-secondary);
+  color: var(--dark-secondary);
+  text-shadow: 0 0 4px var(--light-secondary);
 }
 
 .menu-icon {
@@ -325,6 +325,7 @@ nav {
   position: sticky;
   top: 2rem;
   align-items: flex-start;
+  line-height: 1.2;
 }
 
 .hero-caption p:first-of-type {
@@ -907,6 +908,11 @@ body {
     line-height: 1.5;
   }
 
+  #dragon-image {
+    top: 6rem;
+    margin-top: -2rem;
+  }
+
   #call-btn-container {
     margin-top: 2rem;
   }
@@ -929,7 +935,7 @@ body {
 
   .hero-text {
     width: 80vw;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
   }
 
   .edibles-text ul,
