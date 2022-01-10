@@ -941,7 +941,7 @@ body {
     margin: 0 auto;
   }
 
-  .edibles-text ul,
+  /* .edibles-text ul,
   #established ul,
   .preroll-text ul,
   .concentrate-text ul {
@@ -950,12 +950,16 @@ body {
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
+  } */
+
+  #flower-type {
+    min-height: 600px;
   }
 
-  li {
+  /* li {
     padding: 1rem;
     margin: 1rem;
-  }
+  } */
 }
 
 /* ------- special effects start ------- */
