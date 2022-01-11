@@ -921,6 +921,12 @@ body {
   #flower-type {
     min-height: 600px;
   }
+
+  #dirtys-img {
+    max-width: 950px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 /* ------- special effects start ------- */
