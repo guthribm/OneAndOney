@@ -52,11 +52,12 @@ section {
 }
 
 td {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
-tbody {
-  gap: 0;
+table {
+  border-spacing: 0px;
+  border-collapse: separate;
 }
 
 hr {
