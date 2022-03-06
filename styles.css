@@ -52,7 +52,7 @@ section {
 }
 
 td {
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
 }
 
@@ -110,6 +110,28 @@ li {
 .menu-list li {
   margin: 0;
   text-shadow: 0 0 5px black;
+  padding: 0.15rem;
+}
+
+@keyframes pulse {
+  0% {
+    color: var(--light-secondary);
+    text-shadow: 0px 0px 5px rgba(240, 187, 98, 1);
+  }
+  50% {
+    color: var(--dark-secondary);
+    text-shadow: 0px 0px 0px rgba(240, 187, 98, 0.1);
+  }
+  100% {
+    color: var(--light-secondary);
+    text-shadow: 0px 0px 5px rgba(240, 187, 98, 1);
+  }
+}
+
+.review {
+  animation-duration: 1s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
 }
 
 .menu-open {
@@ -156,7 +178,6 @@ li {
   margin: 0 auto;
   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  margin-bottom: 3rem;
 }
 
 #call-btn:hover,
@@ -381,7 +402,7 @@ nav {
   color: var(--light-secondary);
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  line-height: 0.7;
+  line-height: 1;
   margin: 0;
   letter-spacing: 0.5px;
   font-weight: bolder;
@@ -635,6 +656,31 @@ tbody {
 
 /* ------ FOOTER SECTION ------ */
 
+#review-link {
+  font-size: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(25deg);
+  }
+  50% {
+    transform: rotate(-25deg);
+  }
+  100% {
+    transform: rotate(25deg);
+  }
+}
+
+.fa-google {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: var(--dark-primary);
+  animation-duration: 3s;
+  animation-name: spin;
+  animation-iteration-count: infinite;
+}
+
 #footer-top {
   display: flex;
   flex-direction: column;
@@ -655,7 +701,7 @@ tbody {
 .footer-link {
   display: flex;
   flex-flow: column wrap;
-  width: 100%;
+  width: 110%;
   max-width: 500px;
   margin-bottom: 2rem;
   padding: 1rem;
@@ -667,6 +713,12 @@ tbody {
   background: var(--light-secondary);
   border-radius: 6px;
   transform: scale(1.1);
+}
+
+.review-box {
+  background: var(--light-secondary);
+  box-shadow: 0px 0px 5px rgba(244, 238, 169, 0.5),
+    0px 0px 15px 2px rgba(244, 238, 169, 0.25);
 }
 
 .footer-link p {
